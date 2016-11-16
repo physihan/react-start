@@ -18,13 +18,17 @@ module.exports = {
 
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
+        // include: /src/,
+        // exclude: /node_modules/,
+        loader: "babel",
         // options: {
         //   presets: ["es2015"]
         // },
+        //  query: {  
+        //     presets: ['react', 'es2015']  
+        //   }  
       }
-
+      // { test: /\.js$/, loader: "jsx!babel", include: /src/ },
     ]
   }
 }
